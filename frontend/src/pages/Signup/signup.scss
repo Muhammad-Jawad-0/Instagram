@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.container {
+  width: 100%;
+  height: max-content;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .content {
+    width: 25%;
+    height: 95vh;
+    margin-top: 10px;
+    border: 1px solid rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-family: "Lobster Two", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 50px;
+      margin-top: 25px;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      color: rgb(128, 120, 120);
+      font-size: 18px;
+      text-align: center;
+      word-spacing: 3px;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 5px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      width: 80%;
+      height: 40px;
+      background-color: rgb(0, 149, 246);
+      border-radius: 10px;
+      color: #fff;
+
+      .btn-img {
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+      }
+
+      p {
+        font-size: 15px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+      }
+    }
+
+    .hrDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      font-size: 20px;
+      hr {
+        width: 80px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+    .inputs {
+      margin-top: 20px;
+    }
+
+    .disclamer {
+      p {
+        font-size: 13px;
+        font-weight: 100;
+        margin-top: 14px;
+        color: #333030;
+      }
+    }
+
+    .button{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+
+  .content1{
+    width: 25%;
+    height: 50px;
+    border: 1px solid rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    p{
+      font-size: 15px;
+      font-weight: 50;
+      margin: auto;
+
+      .link{
+        color: red;
+      }
+    }
+  }
+}
