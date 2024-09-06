@@ -47,5 +47,3 @@ export {
     User,
     validate
 }
-
-module.exports = {User, validate }
