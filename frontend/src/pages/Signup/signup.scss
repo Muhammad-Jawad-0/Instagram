@@ -79,6 +79,16 @@
     }
     .inputs {
       margin-top: 20px;
+
+      .email{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 100px;
+      }
+      
+      
     }
 
     .disclamer {
@@ -96,7 +106,9 @@
         align-items: center;
         justify-content: center;
     }
+
   }
+
 
   .content1{
     width: 25%;
@@ -115,6 +127,7 @@
 
       .link{
         color: red;
+        text-decoration: none;
       }
     }
   }
