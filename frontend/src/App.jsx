@@ -1,18 +1,20 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter ,Route, Routes, Navigate } from "react-router-dom";
 import Signup from "./pages/Signup/signup";
 import Login from "./pages/Login/login";
 import Home from "./pages/Home/Home";
 
 function App() {
+  const user = localStorage.getItem("token");
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
+      <Routes>
+			{user && <Route path="/" exact element={<Home />} />}
+			<Route path="/signup" exact element={<Signup />} />
+			<Route path="/login" exact element={<Login />} />
+			<Route path="/" element={<Navigate replace to="/login" />} />
+		</Routes>
       </BrowserRouter>
     </>
   );
